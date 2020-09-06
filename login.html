@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        .formulario{
+            background-color: white;
+            width: 200px;
+            margin: 200px auto;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        .input{
+            display: block;
+        }
+        body{
+            background-color: grey;
+        }
+        
+    </style>
+</head>
+<body>
+    <form action="index.html" class="formulario">
+        <label>E-mail</label>
+        <input class="input" type="email" name="email" required>
+        <label>senha</label>
+        <input class="input" type="password" name="senha" required minlength="4">
+        <input type="submit" value="Logar">
+    </form>
+</body>
+</html>
