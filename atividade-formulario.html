@@ -4,32 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atividade formulario</title>
+    <style>
+        .espace{
+            margin-bottom: 16px;
+        }
+    </style>
 </head>
 <body>
     <h1>Formulario de Inscrição</h1>
     <h2>preencha seus dados</h2>
 
-    <label style="color: black;">Nome completo</label>
-    <input type="text" name="nome" style="width: 100%;" >
-
-    <label style="color: black;">E-mail</label>
-    <input type="email" name="e-mail" style="width: 100%;">
-
-    <label style="color: black;">Endereço</label>
-    <input type="text" name="texto" style="width: 100%;">
-
-    <label style="color: black;">Cidade</label>
-    <input type="text" name="texto" style="width: 100%;">
-
-    <label style="color: black;">Telefone</label>
-    <input type="tel" name="telefone" style="width: 100%;">
-
-    <label style="color: black;">Usuário</label>
-    <input type="text" name="texto" style="width: 100%;" placeholder="entre com o seu login">
-
-    <label style="color: black;">Senha</label>
-    <input type="password" name="senha" style="width: 100%;">
-
-    <input type="button" value="finalizar Inscrição">
+    <form action="">
+        <label style="color: black;">Nome completo</label>
+        <input class="espace" type="text" name="nome" style="width: 100%;" required >
+    
+        <label style="color: black;">E-mail</label>
+        <input class="espace" type="email" name="e-mail" style="width: 100%;"required >
+    
+        <label style="color: black;">Endereço</label>
+        <input class="espace" type="text" name="texto" style="width: 100%;">
+    
+        <label style="color: black;">Cidade</label>
+        <input class="espace" type="text" name="texto" style="width: 100%;">
+    
+        <label style="color: black;">Telefone</label>
+        <input class="espace" type="tel" name="telefone" style="width: 100%;" required >
+    
+        <label style="color: black;">Usuário</label>
+        <input class="espace" type="text" name="texto" style="width: 100%;" placeholder="entre com o seu login" required >
+    
+        <label style="color: black;">Senha</label>
+        <input class="espace" type="password" name="senha" style="width: 100%;" required minlength="4">
+    
+        <input class="espace" type="submit" value="finalizar Inscrição">
+    </form>
+    
 </body>
 </html>
